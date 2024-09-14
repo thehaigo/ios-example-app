@@ -9,11 +9,11 @@ This xcode project wraps the [Desktop Sample App](https://github.com/elixir-desk
 
     `brew install carthage git openssl@1.1 npm`
 
-1. Install Erlang-OTP (with openssl) in the same version 25.0.4 as the bundled runtime edition:
+1. Install Erlang-OTP (with openssl) in the same version 26.2.5 as the bundled runtime edition:
 
     ```
-    asdf install erlang 25.0.4
-    asdf install elixir 1.13.4-otp-25
+    asdf install erlang 26.2.5
+    asdf install elixir 1.17.2-otp-26
     ```
 
     If above fails for you on an older mac or can't seem to find openssl you can try this custom build command as well:
@@ -21,8 +21,8 @@ This xcode project wraps the [Desktop Sample App](https://github.com/elixir-desk
     ```
     export DED_LDFLAGS_CONFTEST="-bundle"
     export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl@1.1)"
-    asdf install erlang 25.0.4
-    asdf install elixir 1.13.4-otp-25
+    asdf install erlang 26.2.5
+    asdf install elixir 1.17.2-otp-26
     ```
 
 1. fork / git clone this project to your local disk:
